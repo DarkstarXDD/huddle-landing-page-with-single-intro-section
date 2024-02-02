@@ -1,22 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Darkstar" />
+    <meta
+      name="description"
+      content="Darkstar's solution for the Huddle Landing Page with a Single Introductory Section challenge on frontendmentor.io"
+    />
+    <meta
+      property="og:title"
+      content="Huddle Landing Page with a Single Introductory Section - Frontend Mentor"
+    />
+    <meta
+      property="og:description"
+      content="Darkstar's solution for the Huddle Landing Page with a Single Introductory Section challenge on frontendmentor.io"
+    />
+    <meta property="og:image" content="./images/link_preview_image.jpeg" />
+    <meta property="og:image:alt" content="screenshot of the webpage" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>
-      Frontend Mentor | Huddle landing page with single introductory section
-    </title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Huddle Landing Page with Single Introductory Section</title>
   </head>
 
-  <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+  <body class="flex-column">
+    <header>
+      <a class="header__logo" href="#home">
+        <img
+          class="header__logo-img"
+          src="./images/logo.svg"
+          alt="huddle"
+          width="264"
+          height="65.33"
+      /></a>
+    </header>
+
+    <main>
+      <section id="home" class="flex-column home">
+        <div class="home__hero-img">
+          <img src="./images/illustration-mockups.svg" alt="" />
+        </div>
+
+        <div class="home__content flex-column">
+          <h1 class="home__heading">Build The Community Your Fans Will Love</h1>
+          <p class="home__text">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a class="home__btn" href="#">Register</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="social-icons flex-row">
+        <li class="social-icon flex-row">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li class="social-icon flex-row">
+          <a href=""><i class="bx bxl-twitter"></i></a>
+        </li>
+        <li class="social-icon flex-row">
+          <a href=""><i class="bx bxl-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
