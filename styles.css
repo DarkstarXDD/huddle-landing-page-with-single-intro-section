@@ -43,11 +43,11 @@ a {
   --ff-poppins: "Poppins", sans-serif;
   --ff-open-sans: "Open Sans", sans-serif;
 
-  --fs-900: 24px;
-  --fs-600: 20px;
-  --fs-500: 17px;
-  --fs-400: 16px;
-  --fs-200: 14px;
+  --fs-900: 1.5rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1.0625rem;
+  --fs-400: 1rem;
+  --fs-200: 0.875rem;
 
   --fw-regular: 400;
   --fw-semibold: 600;
@@ -75,7 +75,7 @@ a {
 }
 
 .container {
-  max-width: 620px;
+  max-width: 38.75rem;
   text-align: center;
 }
 /* --------------- End of Utility Classes --------------- */
@@ -90,42 +90,42 @@ body {
   color: var(--clr-primary-100);
   font-family: var(--ff-poppins);
   font-size: var(--fs-400);
-  padding-inline: 37px;
-  gap: 32px;
+  padding-inline: 2.3125rem;
+  gap: 2rem;
 }
 
 .header {
   width: 100%;
   justify-content: space-between;
-  padding-block: 14px;
+  padding-block: 0.875rem;
 }
 
 .header__logo {
-  max-width: 126px;
+  max-width: 7.875rem;
 }
 
 .grid--home {
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .home__hero-img {
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 
 .home__content {
-  gap: 16px;
+  gap: 1rem;
 }
 
 .home__heading {
   font-size: var(--fs-900);
   font-weight: var(--fw-semibold);
-  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 .home__text {
   font-family: var(--ff-open-sans);
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .home__btn {
@@ -133,10 +133,10 @@ body {
   background-color: var(--clr-primary-100);
   color: var(--clr-primary-400);
   font-size: var(--fs-200);
-  padding: 11.5px 77px;
+  padding: 0.71875rem 4.8125rem;
   border-radius: 100vmax;
-  margin-top: 8px;
-  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.4);
+  margin-top: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
 }
 
 .home__btn:hover {
@@ -166,21 +166,21 @@ body {
 .footer {
   width: 100%;
   margin-top: auto;
-  padding-block: 40px;
+  padding-block: 2.5rem;
 }
 
 .social-icons {
   /* gap: 10px; */
-  gap: 16px;
+  gap: 1rem;
 }
 
 .social-icon {
   position: relative;
   background-color: var(--clr-primary-400);
   font-size: var(--fs-500);
-  width: 28px;
-  height: 28px;
-  border: 1px solid var(--clr-primary-100);
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 0.0625rem solid var(--clr-primary-100);
   border-radius: 50%;
   line-height: 1;
   transition: 0.05s ease-in-out;
@@ -207,32 +207,33 @@ body {
 
 .social-icon:hover::before {
   transform: scale(1.2);
-  box-shadow: 0 0 15px var(--clr-primary-300);
+  box-shadow: 0 0 0.9375rem var(--clr-primary-300);
 }
 
 /* --------------- Media Queries --------------- */
-@media (min-width: 550px) {
+/* --------------- 550 px --------------- */
+@media (min-width: 34.375rem) {
   .home__btn {
     font-size: var(--fs-400);
   }
 }
 
 /* --------------- 875 px --------------- */
-@media (min-width: 875px) {
+@media (min-width: 54.6875rem) {
   body {
     background-size: cover;
   }
 }
 
 /* --------------- 960 px --------------- */
-@media (min-width: 960px) {
+@media (min-width: 60rem) {
   :root {
-    --fs-900: 32px;
-    --fs-400: 18px;
+    --fs-900: 2rem;
+    --fs-400: 1.125rem;
   }
 
   .container {
-    max-width: 1500px;
+    max-width: 93.75rem;
   }
 
   body {
@@ -240,18 +241,18 @@ body {
   }
 
   .header {
-    padding-block: 48px;
+    padding-block: 3rem;
   }
 
   .header__logo {
-    max-width: 215px;
+    max-width: 13.4375rem;
   }
 
   .grid--home {
     text-align: left;
     grid-template-columns: 55% 40%;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
   }
 
   .home__hero-img {
@@ -260,26 +261,26 @@ body {
 
   .home__content {
     align-items: flex-start;
-    gap: 22px;
+    gap: 1.375rem;
   }
 
   .home__heading {
-    line-height: 48px;
+    line-height: 3rem;
   }
 
   .home__text {
-    line-height: 27px;
+    line-height: 1.6875rem;
   }
 
   .home__btn {
     font-size: var(--fs-400);
-    padding: 15.5px 64px;
+    padding: 0.96875rem 4rem;
   }
 
   .social-icon {
     font-size: var(--fs-600);
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .footer {
@@ -288,17 +289,17 @@ body {
 }
 
 /* --------------- 1175 px --------------- */
-@media (min-width: 1175px) {
+@media (min-width: 73.4375rem) {
   :root {
-    --fs-900: 40px;
-    --fs-400: 18px;
+    --fs-900: 2.5rem;
+    --fs-400: 1.125rem;
   }
 
   body {
-    padding-inline: 70px;
+    padding-inline: 4.375rem;
   }
 
   .home__heading {
-    line-height: 60px;
+    line-height: 3.75rem;
   }
 }
