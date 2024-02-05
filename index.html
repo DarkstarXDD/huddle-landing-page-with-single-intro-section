@@ -34,10 +34,10 @@
   </head>
 
   <body class="flex-column">
-    <header>
-      <a class="header__logo" href="#home">
+    <header class="header container flex-row">
+      <a href="#home">
         <img
-          class="header__logo-img"
+          class="header__logo"
           src="./images/logo.svg"
           alt="huddle"
           width="264"
@@ -46,10 +46,12 @@
     </header>
 
     <main>
-      <section id="home" class="flex-column home">
-        <div class="home__hero-img">
-          <img src="./images/illustration-mockups.svg" alt="" />
-        </div>
+      <section id="home" class="grid grid--home container">
+        <img
+          class="home__hero-img"
+          src="./images/illustration-mockups.svg"
+          alt=""
+        />
 
         <div class="home__content flex-column">
           <h1 class="home__heading">Build The Community Your Fans Will Love</h1>
@@ -63,16 +65,22 @@
       </section>
     </main>
 
-    <footer>
-      <ul class="social-icons flex-row">
-        <li class="social-icon flex-row">
-          <a href=""><i class="bx bxl-facebook"></i></a>
+    <footer class="footer container flex-row">
+      <ul class="social-icons flex-row" aria-label="social links">
+        <li>
+          <a class="social-icon flex-row" aria-label="facebook" href="#">
+            <i class="bx bxl-facebook"></i>
+          </a>
         </li>
-        <li class="social-icon flex-row">
-          <a href=""><i class="bx bxl-twitter"></i></a>
+        <li>
+          <a class="social-icon flex-row" aria-label="twitter" href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
         </li>
-        <li class="social-icon flex-row">
-          <a href=""><i class="bx bxl-instagram"></i></a>
+        <li>
+          <a class="social-icon flex-row" aria-label="instagram" href="#">
+            <i class="bx bxl-instagram"></i>
+          </a>
         </li>
       </ul>
     </footer>
