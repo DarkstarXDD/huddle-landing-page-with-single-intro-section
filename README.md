@@ -20,6 +20,7 @@ This is my solution to the ["Huddle Landing Page with a Single Introductory Sect
 
 - Mobile Responsive 📱
 - Self-hosted Fonts 🔡
+- Button Hover Effects
 
 #
 
@@ -28,14 +29,6 @@ This is my solution to the ["Huddle Landing Page with a Single Introductory Sect
 - Grid & Flex Layouts 🔲
 - Mobile First Approach 📱
 - BEM Naming Convention 📚
-
-#
-
-### New Things I Learned 🎓📖
-
-#
-
-### Helpful Resources 📜
 
 #
 
