@@ -84,7 +84,7 @@ body {
   background-color: var(--clr-primary-400);
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   min-height: 100vh;
   color: var(--clr-primary-100);
@@ -141,30 +141,12 @@ body {
   border-radius: 100vmax;
   margin-top: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
+  transition: background-color 0.1s ease-in-out;
 }
 
 .home__btn:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--clr-primary-100);
-}
-
-.home__btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 100vmax;
   background-color: var(--clr-primary-300);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.home__btn:hover::before {
-  transform: scaleX(1);
+  color: var(--clr-primary-100);
 }
 
 .footer {
@@ -173,7 +155,6 @@ body {
 }
 
 .social-icons {
-  /* gap: 10px; */
   gap: 1rem;
 }
 
@@ -214,24 +195,10 @@ body {
 }
 
 /* --------------- Media Queries --------------- */
-/* --------------- 550 px --------------- */
-@media (min-width: 34.375rem) {
-  .home__btn {
-    font-size: var(--fs-400);
-  }
-}
-
-/* --------------- 875 px --------------- */
-@media (min-width: 54.6875rem) {
-  body {
-    background-size: cover;
-  }
-}
-
-/* --------------- 960 px --------------- */
-@media (min-width: 60rem) {
+/* --------------- 1075 px --------------- */
+@media (min-width: 67.1875rem) {
   :root {
-    --fs-900: 2rem;
+    --fs-900: 2.5rem;
     --fs-400: 1.125rem;
   }
 
@@ -241,6 +208,7 @@ body {
 
   body {
     background-image: url("./images/bg-desktop.svg");
+    padding-inline: 4.375rem;
   }
 
   .header {
@@ -268,7 +236,7 @@ body {
   }
 
   .home__heading {
-    line-height: 3rem;
+    line-height: 3.75rem;
   }
 
   .home__text {
@@ -277,7 +245,7 @@ body {
 
   .home__btn {
     font-size: var(--fs-400);
-    padding: 0.96875rem 4rem;
+    padding: 0.9rem 4rem;
   }
 
   .social-icon {
@@ -288,21 +256,5 @@ body {
 
   .footer {
     justify-content: flex-end;
-  }
-}
-
-/* --------------- 1175 px --------------- */
-@media (min-width: 73.4375rem) {
-  :root {
-    --fs-900: 2.5rem;
-    --fs-400: 1.125rem;
-  }
-
-  body {
-    padding-inline: 4.375rem;
-  }
-
-  .home__heading {
-    line-height: 3.75rem;
   }
 }
