@@ -40,21 +40,21 @@ a {
 
 /* --------------- CSS Variables --------------- */
 :root {
+  --clr-primary-100: hsl(0, 0%, 100%);
+  --clr-primary-300: hsl(300, 69%, 71%);
+  --clr-primary-400: hsl(257, 40%, 49%);
+
   --ff-poppins: "Poppins", sans-serif;
   --ff-open-sans: "Open Sans", sans-serif;
-
-  --fs-900: 1.5rem;
-  --fs-600: 1.25rem;
-  --fs-500: 1.0625rem;
-  --fs-400: 1rem;
-  --fs-200: 0.875rem;
 
   --fw-regular: 400;
   --fw-semibold: 600;
 
-  --clr-primary-400: hsl(257, 40%, 49%);
-  --clr-primary-300: hsl(300, 69%, 71%);
-  --clr-primary-100: hsl(0, 0%, 100%);
+  --fs-200: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.0625rem;
+  --fs-600: 1.25rem;
+  --fs-900: 1.5rem;
 }
 
 /* --------------- Utility Classes--------------- */
@@ -81,17 +81,16 @@ a {
 /* --------------- End of Utility Classes --------------- */
 
 body {
+  min-height: 100vh;
+  gap: 2rem;
+  font-size: var(--fs-400);
+  font-family: var(--ff-poppins);
+  color: var(--clr-primary-100);
   background-color: var(--clr-primary-400);
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-
-  min-height: 100vh;
-  color: var(--clr-primary-100);
-  font-family: var(--ff-poppins);
-  font-size: var(--fs-400);
+  background-size: contain;
   padding-inline: 2.3125rem;
-  gap: 2rem;
 }
 
 .header {
@@ -133,14 +132,13 @@ body {
 }
 
 .home__btn {
-  position: relative;
-  background-color: var(--clr-primary-100);
-  color: var(--clr-primary-400);
   font-size: var(--fs-200);
-  padding: 0.71875rem 4.8125rem;
+  color: var(--clr-primary-400);
+  background-color: var(--clr-primary-100);
   border-radius: 100vmax;
-  margin-top: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
+  padding: 0.71875rem 4.8125rem;
+  margin-top: 0.5rem;
   transition: background-color 0.1s ease-in-out;
 }
 
@@ -151,7 +149,7 @@ body {
 
 .footer {
   width: 100%;
-  padding-block: 2.5rem;
+  padding-block: 1.5rem;
 }
 
 .social-icons {
@@ -195,7 +193,12 @@ body {
 }
 
 /* --------------- Media Queries --------------- */
-/* --------------- 1075 px --------------- */
+@media (min-width: 48rem) {
+  body {
+    background-size: cover;
+  }
+}
+
 @media (min-width: 67.1875rem) {
   :root {
     --fs-900: 2.5rem;
@@ -212,7 +215,7 @@ body {
   }
 
   .header {
-    padding-block: 3rem;
+    padding-block: 2rem;
   }
 
   .header__logo {

@@ -1,6 +1,6 @@
 ## Frontend Mentor Challenge 10 - Huddle Landing Page with a Single Introductory Section
 
-This is my solution to the ["Huddle Landing Page with a Single Introductory Section" challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0).
+This is my solution to the [Huddle Landing Page with a Single Introductory Section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0) challenge on [Frontend Mentor](https://www.frontendmentor.io/).
 
 ### Screenshots of My Solution (Desktop & Mobile) 🔍
 
@@ -11,7 +11,7 @@ This is my solution to the ["Huddle Landing Page with a Single Introductory Sect
 
 ### Links 🔗
 
-- Live Site URL:
+- Live Site URL: https://huddle-landing-page-with-single-intro-section-darkstarxdd.vercel.app/
 - Solution URL:
 
 #
@@ -20,7 +20,7 @@ This is my solution to the ["Huddle Landing Page with a Single Introductory Sect
 
 - Mobile Responsive 📱
 - Self-hosted Fonts 🔡
-- Button Hover Effects
+- Glowing Hover Effect for the Social Media Icons 🎇
 
 #
 
@@ -34,19 +34,15 @@ This is my solution to the ["Huddle Landing Page with a Single Introductory Sect
 
 ### Tools I Used 🔧
 
-- [PerfectPixel by WellDoneCode](https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) - A chrome extension that enables you to overlay an image over your HTML webpage. This makes it easy to compare your HTML result with the reference image and adjust fine details.
+- [Prettier VS Code Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter.
 
 - [Responsively.app](https://responsively.app/) - A free and open source tool that allows you to test your webpage on different screen sizes, take screenshots and much more.
 
-- [Web ToolBox - Image Comparison Slider](https://web-toolbox.dev/en/tools/image-compare-slider) - Allows you to compare two images using a slider.
+- [Color Contrast Checker by coolors.co](https://coolors.co/contrast-checker/112a46-acc8e5) - Check color contrast ratios and if needed, update the colors to match the WCAG guidelines.
 
-- [Prettier VS Code Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter.
+- [google webfonts helper by Mario Ranftl](https://gwfh.mranftl.com/fonts) - Converts TTF fonts to WOFF and WOFF2 formats.
 
-- [pwa-asset-generator](https://github.com/elegantapp/pwa-asset-generator) - Generates favicons, icon and splash screen images. Updates manifest.json and index.html files with the generated images according to Web App Manifest specs and Apple Human Interface guidelines.
-
-- [webfont-generator](https://www.fontsquirrel.com/tools/webfont-generator) - Convert your TTF fonts to WOFF and WOFF2 formats.
-
-- [google webfonts helper](https://gwfh.mranftl.com/fonts) - Another tool to convert your TTF fonts to WOFF and WOFF2 formats, but much easier to use than the above.
+- [PerfectPixel by WellDoneCode](https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) - A chrome extension that enables you to overlay an image, over a webpage. This makes it easier to compare your solution result with the reference image and adjust fine details if needed.
 
 #
 
