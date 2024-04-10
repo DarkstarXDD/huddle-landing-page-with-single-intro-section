@@ -143,8 +143,8 @@ body {
 }
 
 .home__btn:hover {
-  background-color: var(--clr-primary-300);
   color: var(--clr-primary-100);
+  background-color: var(--clr-primary-300);
 }
 
 .footer {
@@ -194,15 +194,27 @@ body {
 
 /* --------------- Media Queries --------------- */
 @media (min-width: 48rem) {
+  :root {
+    --fs-900: 1.75rem;
+  }
+
   body {
     background-size: cover;
+  }
+
+  .header__logo {
+    max-width: 10rem;
+  }
+
+  .home__btn {
+    font-size: var(--fs-400);
   }
 }
 
 @media (min-width: 67.1875rem) {
   :root {
-    --fs-900: 2.5rem;
     --fs-400: 1.125rem;
+    --fs-900: 2.5rem;
   }
 
   .container {
@@ -247,7 +259,6 @@ body {
   }
 
   .home__btn {
-    font-size: var(--fs-400);
     padding: 0.9rem 4rem;
   }
 

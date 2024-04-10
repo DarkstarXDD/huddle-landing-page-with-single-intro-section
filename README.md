@@ -20,7 +20,6 @@ This is my solution to the [Huddle Landing Page with a Single Introductory Secti
 
 - Mobile Responsive 📱
 - Self-hosted Fonts 🔡
-- Glowing Hover Effect for the Social Media Icons 🎇
 
 #
 
